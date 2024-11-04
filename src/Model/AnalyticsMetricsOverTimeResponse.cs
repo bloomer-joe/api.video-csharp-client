@@ -19,9 +19,9 @@ namespace ApiVideo.Model {
     [JsonProperty(PropertyName = "context")]
     public AnalyticsMetricsOverTimeResponseContext context { get; set; }
     /// <summary>
-    /// Returns an array of metrics and the timestamps .
+    /// Returns an array of metrics and the timestamps.
     /// </summary>
-    /// <value>Returns an array of metrics and the timestamps .</value>
+    /// <value>Returns an array of metrics and the timestamps.</value>
     [DataMember(Name="data", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "data")]
     public List<AnalyticsMetricsOverTimeResponseData> data { get; set; }

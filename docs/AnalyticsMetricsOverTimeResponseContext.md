@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Metric** | **string** | Returns the metric you selected. | [optional] 
+**Metric** | **string** | Returns the metric and relevant parameters you selected. | [optional] 
 **Interval** | **string** | Returns the interval you selected. | [optional] 
 **Timeframe** | [**AnalyticsAggregatedMetricsResponseContextTimeframe**](AnalyticsAggregatedMetricsResponseContextTimeframe.md) |  | [optional] 
 
