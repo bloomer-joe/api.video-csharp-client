@@ -13,9 +13,9 @@ namespace ApiVideo.Model {
   [DataContract]
   public class AnalyticsMetricsOverTimeResponseContext: DeepObject   {
     /// <summary>
-    /// Returns the metric you selected.
+    /// Returns the metric and relevant parameters you selected.
     /// </summary>
-    /// <value>Returns the metric you selected.</value>
+    /// <value>Returns the metric and relevant parameters you selected.</value>
     [DataMember(Name="metric", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "metric")]
     public string metric { get; set; }

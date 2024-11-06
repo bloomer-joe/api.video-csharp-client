@@ -67,6 +67,13 @@ namespace ApiVideo.Model {
     [DataMember(Name="tag", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "tag")]
     public string tag { get; set; }
+    /// <summary>
+    /// Filters data based on the URL where the view is originating from. This filter parameter accepts an empty string to filter view events where no referrer is available.  - The API filters for exact matches. Include the trailing `/` characters if needed. - The URLs you add must be URL encoded.
+    /// </summary>
+    /// <value>Filters data based on the URL where the view is originating from. This filter parameter accepts an empty string to filter view events where no referrer is available.  - The API filters for exact matches. Include the trailing `/` characters if needed. - The URLs you add must be URL encoded.</value>
+    [DataMember(Name="referrer", EmitDefaultValue=false)]
+    [JsonProperty(PropertyName = "referrer")]
+    public List<string> referrer { get; set; }
 
 
     /// <summary>
@@ -84,6 +91,7 @@ namespace ApiVideo.Model {
       sb.Append("  OperatingSystem: ").Append(operatingsystem).Append("\n");
       sb.Append("  Browser: ").Append(browser).Append("\n");
       sb.Append("  Tag: ").Append(tag).Append("\n");
+      sb.Append("  Referrer: ").Append(referrer).Append("\n");
       sb.Append("}\n");
       return sb.ToString();
     }
