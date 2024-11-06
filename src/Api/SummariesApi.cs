@@ -41,7 +41,7 @@ namespace ApiVideo.Api
         }
 
         /// <summary>
-        /// Generate video summary Generate a title, abstract, and key takeaways for a video.
+        /// Generate video summary Generate an abstract and key takeaways for a video.
         /// </summary>
         /// <exception cref="ApiVideo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation. (optional)</param>
@@ -56,7 +56,7 @@ namespace ApiVideo.Api
         }
 
         /// <summary>
-        /// Generate video summary Generate a title, abstract, and key takeaways for a video.
+        /// Generate video summary Generate an abstract and key takeaways for a video.
         /// </summary>
         /// <exception cref="ApiVideo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="summaryCreationPayload"></param>
@@ -70,7 +70,7 @@ namespace ApiVideo.Api
 
 
         /// <summary>
-        /// Generate video summary Generate a title, abstract, and key takeaways for a video.
+        /// Generate video summary Generate an abstract and key takeaways for a video.
         /// </summary>
         /// <exception cref="ApiVideo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation. (optional)</param>
@@ -85,7 +85,7 @@ namespace ApiVideo.Api
             if (summaryCreationPayload != null && summaryCreationPayload.videoid == null) {
                 throw new ApiException(400,"Missing required parameter 'summaryCreationPayload.VideoId' when calling SummariesApi->create");
             }
-                        
+                                    
             // verify the required parameter 'summaryCreationPayload' is set
             if (summaryCreationPayload == null)
                 throw new ApiException(400, "Missing required parameter 'summaryCreationPayload' when calling SummariesApi->create");
@@ -143,7 +143,7 @@ namespace ApiVideo.Api
 
 
         /// <summary>
-        /// Generate video summary Generate a title, abstract, and key takeaways for a video.
+        /// Generate video summary Generate an abstract and key takeaways for a video.
         /// </summary>
         /// <exception cref="ApiVideo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="summaryCreationPayload"></param>
@@ -157,7 +157,7 @@ namespace ApiVideo.Api
             if (summaryCreationPayload != null && summaryCreationPayload.videoid == null) {
                 throw new ApiException(400,"Missing required parameter 'summaryCreationPayload.VideoId' when calling SummariesApi->create");
             }
-                        
+                                    
             // verify the required parameter 'summaryCreationPayload' is set
             if (summaryCreationPayload == null)
                 throw new ApiException(400, "Missing required parameter 'summaryCreationPayload' when calling SummariesApi->create");
@@ -211,7 +211,7 @@ namespace ApiVideo.Api
 
         
         /// <summary>
-        /// Update summary details Update details for a summary. Note that this operation is only allowed for summary objects where &#x60;sourceStatus&#x60; is &#x60;missing&#x60;.
+        /// Update summary details Update details for a summary.
         /// </summary>
         /// <exception cref="ApiVideo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation. (optional)</param>
@@ -227,7 +227,7 @@ namespace ApiVideo.Api
         }
 
         /// <summary>
-        /// Update summary details Update details for a summary. Note that this operation is only allowed for summary objects where &#x60;sourceStatus&#x60; is &#x60;missing&#x60;.
+        /// Update summary details Update details for a summary.
         /// </summary>
         /// <exception cref="ApiVideo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="summaryId">The unique identifier of the summary source you want to update.</param>
@@ -242,7 +242,7 @@ namespace ApiVideo.Api
 
 
         /// <summary>
-        /// Update summary details Update details for a summary. Note that this operation is only allowed for summary objects where &#x60;sourceStatus&#x60; is &#x60;missing&#x60;.
+        /// Update summary details Update details for a summary.
         /// </summary>
         /// <exception cref="ApiVideo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation. (optional)</param>
@@ -255,11 +255,11 @@ namespace ApiVideo.Api
             if (summaryUpdatePayload == null) 
                 throw new ApiException(400,"Missing required parameter 'summaryUpdatePayload' when calling SummariesApi->update");
             
-                                    
+                        
             if (summaryUpdatePayload == null) 
                 throw new ApiException(400,"Missing required parameter 'summaryUpdatePayload' when calling SummariesApi->update");
             
-                                    
+                        
             // verify the required parameter 'summaryId' is set
             if (summaryId == null)
                 throw new ApiException(400, "Missing required parameter 'summaryId' when calling SummariesApi->update");
@@ -321,7 +321,7 @@ namespace ApiVideo.Api
 
 
         /// <summary>
-        /// Update summary details Update details for a summary. Note that this operation is only allowed for summary objects where &#x60;sourceStatus&#x60; is &#x60;missing&#x60;.
+        /// Update summary details Update details for a summary.
         /// </summary>
         /// <exception cref="ApiVideo.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="summaryId">The unique identifier of the summary source you want to update.</param>
@@ -333,11 +333,11 @@ namespace ApiVideo.Api
             if (summaryUpdatePayload == null) 
                 throw new ApiException(400,"Missing required parameter 'summaryUpdatePayload' when calling SummariesApi->update");
             
-                                    
+                        
             if (summaryUpdatePayload == null) 
                 throw new ApiException(400,"Missing required parameter 'summaryUpdatePayload' when calling SummariesApi->update");
             
-                                    
+                        
             // verify the required parameter 'summaryId' is set
             if (summaryId == null)
                 throw new ApiException(400, "Missing required parameter 'summaryId' when calling SummariesApi->update");
