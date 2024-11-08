@@ -27,9 +27,9 @@ namespace ApiVideo.Model {
     [JsonProperty(PropertyName = "origin")]
     public string origin { get; set; }
     /// <summary>
-    /// Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.
+    /// Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes. The possible values are `abstract` and `takeaways`.
     /// </summary>
-    /// <value>Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.</value>
+    /// <value>Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes. The possible values are `abstract` and `takeaways`.</value>
     [DataMember(Name="attributes", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "attributes")]
     public List<string> attributes { get; set; }
