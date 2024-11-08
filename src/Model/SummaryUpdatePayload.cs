@@ -13,13 +13,6 @@ namespace ApiVideo.Model {
   [DataContract]
   public class SummaryUpdatePayload: DeepObject   {
     /// <summary>
-    /// A video title, based on the contents of the video.
-    /// </summary>
-    /// <value>A video title, based on the contents of the video.</value>
-    [DataMember(Name="title", EmitDefaultValue=false)]
-    [JsonProperty(PropertyName = "title")]
-    public string title { get; set; }
-    /// <summary>
     /// A short outline of the contents of the video.
     /// </summary>
     /// <value>A short outline of the contents of the video.</value>
@@ -42,7 +35,6 @@ namespace ApiVideo.Model {
     public override string ToString()  {
       var sb = new StringBuilder();
       sb.Append("class SummaryUpdatePayload {\n");
-      sb.Append("  Title: ").Append(title).Append("\n");
       sb.Append("  Abstract: ").Append(_abstract).Append("\n");
       sb.Append("  Takeaways: ").Append(takeaways).Append("\n");
       sb.Append("}\n");

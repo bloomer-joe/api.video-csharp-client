@@ -26,6 +26,13 @@ namespace ApiVideo.Model {
     [DataMember(Name="origin", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "origin")]
     public string origin { get; set; }
+    /// <summary>
+    /// Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.
+    /// </summary>
+    /// <value>Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.</value>
+    [DataMember(Name="attributes", EmitDefaultValue=false)]
+    [JsonProperty(PropertyName = "attributes")]
+    public List<string> attributes { get; set; }
 
 
     /// <summary>
@@ -37,6 +44,7 @@ namespace ApiVideo.Model {
       sb.Append("class SummaryCreationPayload {\n");
       sb.Append("  VideoId: ").Append(videoid).Append("\n");
       sb.Append("  Origin: ").Append(origin).Append("\n");
+      sb.Append("  Attributes: ").Append(attributes).Append("\n");
       sb.Append("}\n");
       return sb.ToString();
     }

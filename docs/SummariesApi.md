@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 Generate video summary
 
-Generate a title, abstract, and key takeaways for a video.
+Generate an abstract and key takeaways for a video.
 
 ### Example
 ```csharp
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 
 Update summary details
 
-Update details for a summary. Note that this operation is only allowed for summary objects where `sourceStatus` is `missing`.
+Update details for a summary.
 
 ### Example
 ```csharp

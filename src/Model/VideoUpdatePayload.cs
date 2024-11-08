@@ -104,6 +104,13 @@ namespace ApiVideo.Model {
     [DataMember(Name="transcriptSummary", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "transcriptSummary")]
     public Nullable<bool> transcriptsummary { get; set; }
+    /// <summary>
+    /// Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.
+    /// </summary>
+    /// <value>Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.</value>
+    [DataMember(Name="transcriptSummaryAttributes", EmitDefaultValue=false)]
+    [JsonProperty(PropertyName = "transcriptSummaryAttributes")]
+    public List<string> transcriptsummaryattributes { get; set; }
 
 
     /// <summary>
@@ -124,6 +131,7 @@ namespace ApiVideo.Model {
       sb.Append("  Language: ").Append(language).Append("\n");
       sb.Append("  Transcript: ").Append(transcript).Append("\n");
       sb.Append("  TranscriptSummary: ").Append(transcriptsummary).Append("\n");
+      sb.Append("  TranscriptSummaryAttributes: ").Append(transcriptsummaryattributes).Append("\n");
       sb.Append("}\n");
       return sb.ToString();
     }
