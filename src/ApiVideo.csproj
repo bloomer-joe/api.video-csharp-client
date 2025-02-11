@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 api.video
 
 api.video is an API that encodes on the go to facilitate immediate playback, enhancing viewer streaming experiences across multiple devices and platforms. You can stream live or on-demand online videos within minutes.
@@ -12,9 +12,8 @@ The version of the OpenAPI document: 1
     
     <OutputType>Library</OutputType>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>ApiVideoNet20</PackageId>
-    <PackageVersion>1.6.7</PackageVersion>
-    <Authors>api.video</Authors>
+    <PackageId>BDev.ApiVideo</PackageId>    
+    <Authors>BDev</Authors>
     <Description>api.video csharp API client</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/apivideo/api.video-csharp-client</PackageProjectUrl>
@@ -23,10 +22,15 @@ The version of the OpenAPI document: 1
     <Company>api.video</Company>
     <Product>ApiVideoApiClient</Product>
     <Copyright>No Copyright</Copyright>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>
+      $(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb
+    </AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <PackageVersion>0.0.101-localbuild</PackageVersion>
     <DocumentationFile>bin\Debug\ApiVideo.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
