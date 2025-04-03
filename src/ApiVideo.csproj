@@ -37,7 +37,6 @@ The version of the OpenAPI document: 1
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="RestSharp" Version="111.2.0" />
       <PackageReference Include="JsonSubTypes" Version="1.8.0" />
       <PackageReference Include="NuGet.Build.Tasks.Pack">
         <Version>5.9.1</Version>
@@ -45,6 +44,11 @@ The version of the OpenAPI document: 1
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>..\RestSharp-111-2-0.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
 
