@@ -13,6 +13,8 @@ The version of the OpenAPI document: 1
     <OutputType>Library</OutputType>
     <PackOnBuild>true</PackOnBuild>
     <!--package metadata-->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>XDev-min.png</PackageIcon>
     <Title>XDev.$(ProjectName)</Title>
     <Product>XDev.$(AssemblyName)</Product>
     <PackageId>XDev.$(AssemblyName)</PackageId>
